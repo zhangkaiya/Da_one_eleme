@@ -156,7 +156,7 @@ public class RightAdapter extends CustomizeLVBaseAdapter {
     }
 
     class ChildViewHolder {
-        
+
         private ImageView lv_customize_item_image;
         private TextView lv_customize_item_title;
         private TextView lv_customize_item_content;
