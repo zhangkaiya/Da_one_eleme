@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiyun.da_one_eleme.controller.Fragment.Person_Fragment">
+<TextView
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#6A9DD1"
+    android:text="订单"
+    android:textSize="20sp"
+    android:textColor="#ffff"/>
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recycler">
+
+   </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiyun.da_one_eleme.controller.Fragment.Order_Fragment">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="我的"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/user_center_notice"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/user_center_setting"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <com.jiyun.da_one_eleme.view.RoundImg
+            android:id="@+id/head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/user_center_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即登录"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#FAFAFA"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<RadioButton-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/wait_refund"-->
+            <!--android:text="余额"/>-->
+        <!--<RadioButton-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:drawableTop="@drawable/my_order_icon"-->
+        <!--android:text="优惠"/>-->
+        <!--<RadioButton-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+
+        <!--android:layout_height="wrap_content"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:drawableTop="@drawable/my_order_icon"-->
+        <!--android:text="积分 "/>-->
+    <!--</RadioGroup>-->
+    <!--<View-->
+        <!--android:background="#ededec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:background="#FAFAFA">-->
+        <!--<ImageView-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/msg_failed"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:text="收货地址"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#ededec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FAFAFA">-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/my_order_icon"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:text="我的收藏"/>-->
+
+<!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#ededec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FAFAFA">-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/my_lottery_icon"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:text="美食相册"/>-->
+
+<!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#EDEDEC"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FAFAFA">-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/my_coupon_icon"/>-->
+        <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:text="积分商城"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="0元好物在这里"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#ededec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FAFAFA">-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/my_order_icon"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:text="饿了吗会员卡"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#ededec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"/>-->
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/user_center_orther"/>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="220dp"
+        android:src="@drawable/item_logo" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E8C927"
+                android:gravity="center_vertical"
+                android:text="品牌" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饿了吗程序员外卖项目 "
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:textColor="#DADADA"
+                android:text="票" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RatingBar
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="1dp"
+                android:progressTint="@color/colorPrimary"
+                android:rating="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#F5CE08"
+                android:text="2.8"/> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="月售243单"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="￥ 0元起/配送费￥9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="556米/33分钟"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ededec"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="#E8C927"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="减"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在线支付满49元减10元，满89元减16元"/>
+        </LinearLayout>
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_marginTop="15sp">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#F5CE08"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            android:text="赠"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="满49元赠九珍果汁饮料"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

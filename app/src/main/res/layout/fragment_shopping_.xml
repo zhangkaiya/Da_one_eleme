@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shopp_ing_re">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <com.jiyun.da_one_eleme.modle.twolinkage.HaveHeaderListView
+            android:id="@+id/lv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:background="@android:color/white" />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/shop_car"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/shopcar"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

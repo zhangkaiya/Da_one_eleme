@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiyun.da_one_eleme.controller.Activity.Shopping_car_Activity">
+<LinearLayout
+    android:background="#3190E8"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_marginLeft="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_arrow_left"/>
+    <TextView
+        android:layout_marginLeft="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购物车"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_car"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearcar"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:text="合计:"
+                    android:textColor="#f00"/>
+
+                <TextView
+                    android:textColor="#f00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="￥27.80" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:text="不含配送费" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_acounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="去结算"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+</LinearLayout>

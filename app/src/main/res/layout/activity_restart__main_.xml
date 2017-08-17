@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiyun.da_one_eleme.controller.Activity.Restart_Main_Activity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:layout_above="@+id/linearLayout">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/button_shouye"
+                android:gravity="center"
+                android:textColor="@drawable/shouye_color"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/button_dingdan"
+                android:gravity="center"
+                android:textColor="@drawable/shouye_color"
+                android:text="订单" />
+
+
+            <RadioButton
+                android:id="@+id/RadioButton_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/button_geren"
+                android:gravity="center"
+                android:text="个人"
+                android:textColor="@drawable/shouye_color" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/button_gengduo"
+                android:gravity="center"
+                android:textColor="@drawable/shouye_color"
+                android:text="更多" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
